@@ -5,7 +5,6 @@
 
 body {
   font-family: 'Playfair Display', serif;
-  position: relative;
 }
 
 .background-img {
@@ -24,7 +23,6 @@ img {
   align-items: center;
   justify-content: center;
   padding-top: 35px;
-  position: absolute;
 }
 
 .person-description {
@@ -44,6 +42,10 @@ img {
   position: relative;
 }
 
+.person-image img {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
 .person-name {
   position: absolute;
   top: 300px;
@@ -58,4 +60,66 @@ img {
   gap: 25px;
   font-size: 35px;
   padding: 10px 0px;
+}
+
+.my-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.my-work-header {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.my-work-project {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.my-work-project-image {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-title {
+  position: absolute;
+  font-size: 40px;
+}
+
+.my-work-project-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.my-work-project-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+}
+
+.my-work-project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: gray;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 100px;
 }
