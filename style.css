@@ -125,10 +125,16 @@ img {
   padding-bottom: 100px;
 }
 
-.contact-info {
+.contact-section {
   background-color: rgba(8, 145, 178, 255);
   color: white;
   margin-top: 200px;
+  width: 100%;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-info h1 {
@@ -171,5 +177,40 @@ img {
 
 .bottom-image img {
   width: 100%;
-  position: absolute;
+}
+
+@media (min-width: 1024px) {
+  .my-work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 50px;
+    justify-items: center;
+  }
+
+  .bottom-image img {
+    object-fit: contain;
+    height: 450px;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contact-info {
+    max-width: 40%;
+  }
+
+  .contact-info-desc {
+    font-size: 25px;
+  }
+
+  .contact-links {
+    font-size: 35px;
+    justify-content: flex-start;
+    padding-left: 35px;
+  }
+
 }
