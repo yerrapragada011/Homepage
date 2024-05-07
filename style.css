@@ -55,7 +55,7 @@ img {
   position: relative;
 }
 
-.person-image img {
+.person-image-name img {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -219,6 +219,94 @@ img {
   gap: 10px;
 }
 
+@media (min-width: 992px) {
+  .my-work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 50px;
+    justify-items: center;
+    padding: 0px 50px;
+  }
+
+  .blue-background {
+    width: 125%;
+    height: 100%;
+    transform: translateY(-82%) translateX(-25%) rotate(350deg);
+  }
+
+  .bottom-image img {
+    object-fit: contain;
+    height: 450px;
+    position: relative;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contact-info h1 {
+    justify-content: flex-start;
+    padding-left: 35px;
+  }
+
+  .contact-info {
+    max-width: 40%;
+  }
+
+  .contact-info-desc {
+    font-size: 25px;
+  }
+
+  .contact-links {
+    font-size: 35px;
+    justify-content: flex-start;
+    padding-left: 35px;
+  }
+
+  .person-info {
+    padding: 35px 100px;
+  }
+
+  .person-image-name img {
+    width: 50%;
+  }
+
+  .person-name {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    top: 10%;
+    font-size: 3.2vw;
+    left: 45%;
+  }
+
+  .person-description-section {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .person-description-header {
+    padding-left: 20px;
+  }
+
+  .icon-links {
+    align-self: flex-end;
+    padding-right: 20px;
+  }
+
+  .my-work-header {
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-top: 100px;
+  }
+} 
+
 @media (min-width: 1200px) {
   .my-work {
     display: grid;
@@ -271,12 +359,17 @@ img {
     padding: 35px 100px;
   }
 
+  .person-image-name img {
+    width: 100%;
+  }
+
   .person-name {
+    position: absolute;
     display: flex;
     gap: 10px;
     top: 84%;
     font-size: 3.2vw;
-    right: 2%;
+    left: 6%;
   }
 
   .person-description-section {
