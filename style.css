@@ -8,20 +8,12 @@ body {
   position: relative;
 }
 
-.blue-background {
-  position: absolute;
-  background-color: rgba(8, 145, 178, 255);
-  width: 125%;
-  height: 20%;
-  z-index: -1;
-  transform: translateY(-30%) translateX(-25%) rotate(60deg);
-}
-
 img {
   width: 100%;
 }
 
 .person-info {
+  background: linear-gradient(-10deg, transparent 50%, rgb(68, 158, 199) 20%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,7 +103,7 @@ img {
 .project-title {
   position: absolute;
   display: flex;
-  font-size: 40px;
+  font-size: 35px;
   justify-content: center;
 }
 
@@ -152,7 +144,7 @@ img {
 }
 
 .contact-section {
-  background-color: rgba(8, 145, 178, 255);
+  background-color: rgb(68, 158, 199);
   color: white;
   margin-top: 200px;
   width: 100%;
@@ -229,12 +221,6 @@ img {
     padding: 0px 50px;
   }
 
-  .blue-background {
-    width: 125%;
-    height: 100%;
-    transform: translateY(-82%) translateX(-25%) rotate(350deg);
-  }
-
   .bottom-image img {
     object-fit: contain;
     height: 450px;
@@ -268,19 +254,16 @@ img {
 
   .person-info {
     padding: 35px 100px;
-  }
-
-  .person-image-name img {
-    width: 50%;
+    flex-direction: row;
   }
 
   .person-name {
     position: absolute;
     display: flex;
     gap: 10px;
-    top: 10%;
-    font-size: 3.2vw;
-    left: 45%;
+    top: 84%;
+    font-size: 3vw;
+    left: 5%;
   }
 
   .person-description-section {
@@ -305,7 +288,7 @@ img {
     padding-left: 50px;
     padding-top: 100px;
   }
-} 
+}
 
 @media (min-width: 1200px) {
   .my-work {
@@ -315,12 +298,6 @@ img {
     gap: 50px;
     justify-items: center;
     padding: 0px 50px;
-  }
-
-  .blue-background {
-    width: 125%;
-    height: 100%;
-    transform: translateY(-82%) translateX(-25%) rotate(350deg);
   }
 
   .bottom-image img {
@@ -369,7 +346,7 @@ img {
     gap: 10px;
     top: 84%;
     font-size: 3.2vw;
-    left: 6%;
+    left: 5%;
   }
 
   .person-description-section {
